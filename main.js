@@ -1,6 +1,6 @@
 const main = document.getElementById("main")
 const removeAllItems = document.getElementById("remove-all-items")
-const item = ["アイテム1", "アイテム2", "アイテム3", "アイテム4", "アイテム5"]
+const items = ["アイテム1", "アイテム2", "アイテム3", "アイテム4", "アイテム5"]
 const ulElement = document.createElement("ul")
 /**
  * 課題1: id属性値が `main` のdiv要素ににul要素を追加する
@@ -18,9 +18,9 @@ main.appendChild(ulElement)
  *     5. アイテム5
  */
 
-for (let i = 0; i < item.length; i++) {
-    const liElement = document.createElement("li");
-    liElement.textContent = item[i]
+for (let i = 0; i < items.length; i++) {
+    const liElement = document.createElement("li")
+    liElement.textContent = items[i]
     ulElement.appendChild(liElement)
 }
 
